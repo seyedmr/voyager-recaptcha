@@ -4,6 +4,7 @@ namespace SeyedMR\VoyagerRecaptcha\Listeners;
 
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Support\Facades\Route;
 
 class VoyagerRecaptchaRoute
 {
@@ -24,5 +25,7 @@ class VoyagerRecaptchaRoute
      */
     public function handle($event)
     {
+        $namespacePrefix = '\\'.'SeyedMR\VoyagerRecaptcha\Http\Controllers'.'\\';
+        Route::post('login', ['uses' => $namespacePrefix.'VoyagerRecaptchaAuthController@postLogin', 'as' => 'postlogin']);
     }
 }
