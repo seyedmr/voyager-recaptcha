@@ -34,9 +34,8 @@ class VoyagerRecaptchaServiceProvider extends ServiceProvider
         $this->publishes([
             // Views
             __DIR__.'/../resources/views/vendor/voyager/login.blade.php' => resource_path('views/vendor/voyager/login.blade.php'),
+            // Configs
             __DIR__ . '/config/voyager-recaptcha.php' => config_path('voyager-recaptcha.php'),
-            // Controller
-            __DIR__.'/../publishable/controllers/VoyagerRecaptchaAuthController.php' => app_path('Http/Controllers/Voyager/Auth/VoyagerRecaptchaAuthController.php')
         ], 'voyager-recaptcha');
     }
 
