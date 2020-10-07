@@ -1,0 +1,30 @@
+{
+    "name": "seyedmr/voyager-recaptcha",
+    "description": "this package will be add recaptcha in your voyager login page",
+    "require": {
+        "tcg/voyager": "^1.4"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "SeyedMR\\VoyagerRecaptcha\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SeyedMR\\VoyagerRecaptcha\\VoyagerRecaptchaServiceProvider"
+            ],
+            "aliases": {
+                "VoyagerRecaptcha": "SeyedMR\\VoyagerRecaptcha\\Facades\\VoyagerRecaptcha"
+            }
+
+        }
+    },
+    "authors": [
+        {
+            "name": "seyedmr",
+            "email": "mr.smaili313@gmail.com"
+        }
+    ]
+}
