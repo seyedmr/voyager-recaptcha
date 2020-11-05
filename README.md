@@ -8,6 +8,11 @@ Voyager Recaptcha helps you to add recaptcha to your voyager login page.
 ## Configuration
 
 Add `VOYAGER_RECAPTCHA_SECRET` and `VOYAGER_RECAPTCHA_SITEKEY` into **.env**
+```dotenv
+VOYAGER_RECAPTCHA_SECRET=secret-key
+VOYAGER_RECAPTCHA_SITEKEY=site-key
+```
 
+(You can obtain them from [here](https://www.google.com/recaptcha/admin))
 
 **THE END** :)
