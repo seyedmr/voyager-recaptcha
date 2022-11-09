@@ -45,7 +45,6 @@ class VoyagerRecaptchaServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton('voyager_recaptcha', function ($app) {
-            \Debugbar::info($app['config']);
             return new VoyagerRecaptcha(
                 $app['config']['voyager-recaptcha.secret'],
                 $app['config']['voyager-recaptcha.sitekey'],
